@@ -5,13 +5,16 @@ import instance from '../composables/axios'
 export const useDateBase = defineStore({
   id: 'db',
   state: () => ({
-    db: null
+    home: null,
+    work: null
   }),
   actions: {
     async getData() {
       try {
-        const responce = await instance.get('/posts')
-        this.db = responce.data
+        const home = await instance.get('/home')
+        const work = await instance.get('/home')
+        this.home = home.data
+        this.work = work.data
       } catch (err){
         console.log(err.message);
       }
