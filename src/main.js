@@ -6,6 +6,8 @@ import router from './router'
 
 import "./tailwind/index.css"
 
+import "./assets/base.css"
+
 import { useDateBase } from "./stores/db"
 
 const app = createApp(App)
