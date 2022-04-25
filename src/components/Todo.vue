@@ -1,5 +1,7 @@
 <script setup>
 import { useDateBase } from "../stores/db.js"
+import { useRouter } from "vue-router";
+const router = useRouter()
 const db = useDateBase()
 defineProps({
   title: {
@@ -27,6 +29,7 @@ defineProps({
       <div>{{ text }}</div>
     </div>
     <div>
+        <button @click="router.push({name: 'update', params: { col: collection, id: id }})" class="px-3 py-1 mx-2 border-2 rounded font-semibold hover:bg-white hover:text-slate-600 transition border-white ">Change</button>
         <button @click="db.deleteTodo(collection ,id)" class="px-3 py-1 border-2 rounded font-semibold hover:bg-red-600 transition border-red-600 ">Delete</button>
     </div>
   </div>

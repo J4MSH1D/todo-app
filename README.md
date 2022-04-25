@@ -1,10 +1,14 @@
 # Todo App
 
-This template should help get you started developing with Vue 3 in Vite.
+## Description
 
-## Recommended IDE Setup
+This project made to Creat, Read, Update, Delete tasks. (CRUD)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+In this project I use Vite for Frontend Tooling, Vue.js (3.x) with SFC module, Pinia for State Management and to integrate with JSON-Server, JSON-Server for REST API server, Vue Router for routing and Tailwind CSS for styling.
+
+## Recommended IDE Setup for Developing
+
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur)
 
 ## Customize configuration
 
@@ -16,7 +20,7 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 npm install
 ```
 
-### Compile Hot-Reload and JSON-Server for Development
+### Run Hot-Reload and JSON-Server for Development
 
 ```sh
 npm run dev
@@ -31,3 +35,6 @@ npm run server
 ```sh
 npm run build
 ```
+
+
+### You can see commits in [GitHub](https://github.com/J4MSH1D/todo-app)
